@@ -1,0 +1,88 @@
+# site name
+prefixName: ' 楠ちゃんの'
+siteName: 'Blog'
+# favicon and site master avatar
+favicon: /images/favicon.ico
+avatar: /image/siteicon.png
+url: https://kusu.moe
+description: Forgive or Forget.
+#cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://cdn.kusu.icu
+pjax: 1
+# 1开启
+mathjax: 0
+
+notice: false
+lazyloadImg: https://cdn.kusu.icu/Sakurairo_Vision-2.5/load_svg/outload.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-code }, 
+    生活: {path: /categories/生活/, fa: fa-file-text-o }
+  } }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup}, 
+  } }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+  - https://api.kusu.icu/api/
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: 
+
+# startdash url, title, desc img
+
+# your site build time or founded date
+siteBuildingTime: 02/15/2020
+
+#social  url, img PC端配置
+social:
+  bilibili: {url: https://space.bilibili.com/358682633, img: /Sakurairo_Vision-2.5/display_icon/sakura/bilibili.png}
+  github: {url: http://github.com/Shiroiame-Kusu, img: /Sakurairo_Vision-2.5/display_icon/sakura/github.png}
+  twitter: {url: https://twitter.com/Shiroiame_Kusu, img: /Sakurairo_Vision-2.5/display_icon/sakura/tw.png}
+#social  url, img 移动端配置
+msocial:
+  github: {url: http://github.com/Shiroiame-Kusu, fa: fa-github, color: 333}
+
+donate: false
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies: false
+
+aplayer: 
+  id: 975427390
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.5
+  mutex: true
+
+# Valine
+valine: true
+v_appId: p299R3VDCYM739jY8bAiyoFa-gzGzoHsz
+v_appKey: An2jKgRoGfLRupBLlV1GoxZX
+
+# Waline
+waline:
+  enable: false
+  serverURL: #服务端地址
+  visitor: false #统计阅读量
+  comment_count: true #统计评论数
+  avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
+  guest_info: nick #,mail,link # custom comment header
+  pageSize: 10
+  placeholder: 祝开开心心！ # Comment Box placeholder
+  requiredFields: [ 'nick','mail' ] #设置必填项
+  background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
